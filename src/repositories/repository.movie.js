@@ -3,7 +3,7 @@ import { query } from "../data/sqlite.js";
 async function getAllMovies(year) {
 
     let filter = [];
-    let sql = "SELECT year,title,director,studio,image_url FROM movies";
+    let sql = "SELECT id,year,title,director,studio,image_url FROM movies";
 
     if (year) {
         sql = sql + ` WHERE year = ?`;
