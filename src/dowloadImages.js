@@ -223,7 +223,7 @@ const dataMovies = [
       "title": "Titanic",
       "director": "James Cameron",
       "studio": "20th Century Fox, Paramount Pictures",
-      "image_url": "./src/images/Titanic.jpg"
+      "image_url": "https://fr.web.img3.acsta.net/pictures/23/01/10/16/06/0622119.jpg"
     },
     {
       "id": 28,
