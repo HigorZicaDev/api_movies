@@ -18,4 +18,13 @@ async function getAllMovies(year) {
     return movies;
 }
 
-export default { getAllMovies };
+async function createMovie(data) {
+
+    let sql = `INSERT INTO movies(title,year,director,studio,image_url) VALUES(?,?,?,?,?) returning id`;
+    
+    const movie = await query(sql, [data.title, data.year, data.director, data.studio, data.image_url]);
+
+    return movie;
+}
+
+export default { getAllMovies, createMovie };
